@@ -83,6 +83,8 @@ class Hangman:
         None
         """
         # Loop until a valid letter is entered
+        # When a valid letter is found check if it is in the word
+
         while True:
 
             guess = input("Enter a letter you think is in the word: ")
@@ -110,6 +112,7 @@ def play_game(word_list: list):
     num_lives = 5
     game = Hangman(word_list, num_lives)
 
+    # Loop while the user has lives left and there are still letters to guess
     while True:
         if game.num_lives == 0:
             print("You lost! The word was {game.word}.")
@@ -122,5 +125,8 @@ def play_game(word_list: list):
 
 if __name__ == "__main__":
 
+    # create a word list
     word_list = ["banana", "apple", "watermelon", "grapes", "strawberries"]
+
+    # play the game using your word list
     play_game(word_list)
