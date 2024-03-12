@@ -28,6 +28,8 @@ def is_input_valid(guess: str) -> bool:
     
 if __name__ == "__main__":
 
+    word = select_word()
+
     while True:
 
         guess = get_user_letter()
@@ -35,3 +37,7 @@ if __name__ == "__main__":
             # check the letter
             break
 
+    if guess in word:
+        print(f"Good guess! {guess} is in the word")
+    else:
+        print(f"Sorry, {guess} is not in the word. Try again.")
