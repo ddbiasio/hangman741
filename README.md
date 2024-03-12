@@ -5,7 +5,9 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 ## Table of Contents
 
-## Folder Structure
+## File Structure
+
+## Installation
 
 ## Usage Instructions
 
